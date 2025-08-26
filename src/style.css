@@ -87,3 +87,14 @@ a.nav__link[data-qa='hover']:hover {
   color: var(--color-blue);
   text-decoration: none;
 }
+
+a.nav__link[data-qa='hover']:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: var(--color-blue);
+  border-radius: 4px;
+}
