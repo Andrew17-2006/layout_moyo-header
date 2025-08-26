@@ -79,6 +79,10 @@ body {
   border-radius: 4px;
 }
 
+.nav__link[data-qa='hover'] {
+  position: relative;
+}
+
 a.nav__link[data-qa='hover']:hover {
   color: var(--color-blue);
   text-decoration: none;
