@@ -87,16 +87,24 @@ body {
   left: 0;
 }
 
-.containerhover:hover {
-  border: 1px solid var(--primary-color);
+.nav__link[data-qa] {
+  text-decoration: none;
+  position: relative;
+  color: var(--primary-color);
+}
+
+.nav__link[data-qa]:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
 }
 
 .containerhover:has(:hover) {
   border: none;
-}
-
-.logohover:hover {
-  border: 1px solid var(--primary-color);
 }
 
 .link_hover:hover {
